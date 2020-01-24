@@ -1,0 +1,81 @@
+<link rel='stylesheet' type='text/css' href='/public/instructPro.css' />
+
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="bg_shadow"></div>
+        <div class="sidebar__inner">
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="profile_info">
+                <div class="profile_img">
+                    <img src="../public/profile.png" alt="profile_img">
+                </div>
+                <div class="profile_data">
+                    <p class="name">Martin Chikilian</p>
+                    <p class="role">Programmer(python)</p>
+                    <div class="btn">Update Profile</div>
+                    <div class="btn">See Profile</div>
+                    <a href="/users/logout" class="btn btn-secondary">Logout</a>
+
+                </div>
+            </div>
+            <ul class="siderbar_menu">
+                <li><a href="#">
+                        <div class="title">My courses</div>
+                    </a></li>
+                <li><a href="#">
+                        <div class="title">Performance</div>
+                    </a></li>
+                <li><a href="#">
+                        <div class="title">Communication</div>
+                    </a></li>
+                <li><a href="#">
+                        <div class="title">Help</div>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="hamburger__inner">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Enrollment</a></li>
+                <li><a href="#">Revenue</a></li>
+            </ul>
+
+        </div>
+
+        <div class="container">
+            <h1 class="mt-4">Dashboard</h1>
+            <p class="lead mb-3">Welcome <%= user.name %></p>
+            <a href="/users/logout" class="btn btn-secondary">Logout</a>
+            <div class="item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo quaerat vel iure quam
+                repudiandae tempora velit sed ducimus obcaecati eum hic dignissimos porro, accusantium at corrupti dolor
+                aut non suscipit eveniet cumque quo culpa?
+            </div>
+            <div class="item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo quaerat vel iure quam
+                repudiandae tempora velit sed ducimus obcaecati eum hic dignissimos porro, accusantium at corrupti dolor
+                aut non suscipit eveniet cumque quo culpa?
+            </div>
+            <div class="item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo quaerat vel iure quam
+                repudiandae tempora velit sed ducimus obcaecati eum hic dignissimos porro, accusantium at corrupti dolor
+                aut non suscipit eveniet cumque quo culpa?
+            </div>
+            <div class="item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nemo quaerat vel iure quam
+                repudiandae tempora velit sed ducimus obcaecati eum hic dignissimos porro, accusantium at corrupti dolor
+                aut non suscipit eveniet cumque quo culpa?
+            </div>
+        </div>
+
+    </div>
+</div>

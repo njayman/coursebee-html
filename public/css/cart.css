@@ -1,0 +1,106 @@
+p{
+    color: black;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.col-md-3{
+    line-height: 30px;
+}
+h2,h3{
+    color: #ff9d00;
+}
+h5{
+    color: #ed8c00;
+    font-size: 14px;
+    padding: 5px 5px 5px 15px;
+}
+h6{
+    color: #b0adac;
+    font-size: 11px;
+    padding: 19px 5px 5px 5px;
+}
+.social{
+    text-align: left;
+    font-size: 30px;
+    word-spacing: 30px;
+    
+    padding: 25px 10px 10px 10px;
+}
+h2{
+    font-size: 18px;
+}
+#cart-area{
+    width: 70%;
+    border-right: 3px solid #ed8c00;
+    padding: 50px;
+    float:left;
+}
+.card-price{
+    font-size:25px;
+    font-style: bold;
+}
+#cart-total{
+    width: 30%;
+    padding: 50px;
+    float:left;
+}
+#cart-content{
+    clear: both;
+}
+#price{
+    font-size:30px;
+    font-style:bold;
+}
+#actual-price{
+    text-decoration: line-through;
+}
+#checkout-button{
+    background-color: #ed8c00;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: hand;
+}
+.footer-top{
+    background: #4f331b;
+    padding: 80px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.row{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    
+}
+.bold{
+    font-weight: 700;
+}
+.bold_line{
+    color: #cc5d00;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color:#ed8c00;
+}
+a:link{
+    text-decoration: none;
+    color:#ed8c00;
+}
+a:hover{
+    color: #cc5d00;
+}
+a:active{
+    color: #cf0000;
+}
+.container{
+    margin: 0%;
+    position:relative;
+    
+
+}

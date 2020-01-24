@@ -1,0 +1,240 @@
+<!-- views/partials/header.ejs -->
+
+<nav class='navbar navbar-expand-lg navbar-dark fixed-top'
+    style="transition: 750ms; background: rgba(210,210,210,0);">
+    <div class='container-fluid'>
+        <!--Brand Logo of CourseBee-->
+        <a class='navbar-brand' href='/'>
+            <img src='/public/images/coursebee.png' alt='CourseBee' style="height:60px;">
+        </a>
+        <!--/Brand Logo of SourseBee-->
+        <!--Collapsible button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--/COllapsible button-->
+        <!--Colapsible content-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto">
+                <li class="dropdown mega-dropdown active">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"
+                        style="font-size:15px; font-weight:800; color:black;">Courses
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div style="display: table-cell;">
+                            <h6>Courses</h6>
+                            <a class="dropdown-item"><b>Technology</b></a>
+                            <a class="dropdown-item" href="/Course_details/">Programming</a>
+                            <a class="dropdown-item" href="#">Database</a>
+                            <a class="dropdown-item" href="#">Networking</a><br>
+                            <a class="dropdown-item"><b>Business</b></a>
+                            <a class="dropdown-item" href="#">Sales</a>
+                            <a class="dropdown-item" href="#">Marketing</a>
+                            <a class="dropdown-item" href="#">Human Resource Management</a><br>
+                            <a class="dropdown-item"><b>Creative</b></a>
+                            <a class="dropdown-item" href="#">Audio</a>
+                            <a class="dropdown-item" href="#">3D Modeling</a>
+                            <a class="dropdown-item" href="#">Graphics Design</a>
+                        </div>
+                        <div style="display: table-cell;">
+                            <h6>Career</h6>
+                            <a class="dropdown-item"><b>Engineer</b></a>
+                            <a class="dropdown-item" href="#">Matlab</a>
+                            <a class="dropdown-item" href="#">Proteus</a>
+                            <a class="dropdown-item" href="#">Solidworks</a>
+                            <a class="dropdown-item" href="#">Autocad</a><br>
+                            <a class="dropdown-item"><b>Data Scientist</b></a>
+                            <a class="dropdown-item" href="#">R</a>
+                            <a class="dropdown-item" href="#">Regression Analysis</a>
+                            <a class="dropdown-item" href="#">SPSS</a>
+                            <a class="dropdown-item" href="#">ANOVA</a><br>
+                            <a class="dropdown-item"><b>Architect</b></a>
+                            <a class="dropdown-item" href="#">Unreal Engine</a>
+                            <a class="dropdown-item" href="#">3D Modeling</a>
+                            <a class="dropdown-item" href="#">Blender</a>
+                        </div>
+                    </div>
+
+                </li>
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Search...">
+                    <a class="search-btn" href="#">
+                        <i class="fas fa-search fa-lg"></i>
+                    </a>
+                </div>
+
+            </ul>
+            <ul class="navbar-nav ml-auto" style="align-items: center;">
+                <li class="nav-item" style="margin: 10px;"><a href="#">Tutoring</a></li>
+                <li class="nav-item" style="margin: 10px;"><a href="#">Master Class</a></li>
+                <li class="nav-item" style="margin: 10px;"><a href="#">Events</a></li>
+                <!-- <li class="nav-item" style="margin: 10px;"><a href="#">Degree</a></li>
+             --><li class="nav-item" style="margin: 10px;"><a href="#">Training</a></li>
+                <div class="dropdown">
+                    <button class="nav-item btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For Instructors</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/users/login">Login</a>
+                        <a class="dropdown-item" href="/users/register">Register</a>
+                    </div>
+                </div>
+                <li class="nav-item" style="margin: 10px;"><a href="Courses/courses.html">My Courses</a></li>
+                <li>
+                    <a id="cart_icon" data-toggle="modal" data-target="#cartModal">
+                        <img src='/public/images/shopping-cart.png' alt='cart'
+                            style="width: 30px; height: 30px; margin: 5px; color:white"></a>
+                </li>
+                <button class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#login-modal"
+                    style="margin: 10px;">Log in</button>
+                <button class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#signup-modal"
+                    style="margin: 10px;">Sign up</button>
+
+
+            </ul>
+        </div>
+        <!--/collapsible content-->
+    </div>
+</nav>
+<!--/Navigation-->
+<!-- Modal -->
+<!-- Cart modal-->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Your Shopping Cart
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-image">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="w-25">
+                                <img src="python.png" class="img-fluid img-thumbnail" alt="Sheep">
+                            </td>
+                            <td>Python beginners Course</td>
+                            <td>39$</td>
+                            <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                            <td>78$</td>
+                            <td>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="w-25">
+                                <img src="python.png" class="img-fluid img-thumbnail" alt="Sheep">
+                            </td>
+                            <td>Python Advanced course</td>
+                            <td>89$</td>
+                            <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                            <td>178$</td>
+                            <td>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                    <h5>Total: <span class="price text-success">256$</span></h5>
+                </div>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="cart_page.html"><button type="button" class="btn btn-warning">View Cart</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/cart modal-->
+<!--Popup Button for signup-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="signin">
+                    <form>
+                        <br>
+                        <a style="color:#eeba19;" class="h2">Log In</a><br><br>
+                        <input type="text" name="username" placeholder="Username" /><br /><br />
+                        <input type="password" name="password" placeholder="Password" /><br /><br />
+                        <a href="user_profile/user_pro.html"><input type="button" value="Log In" /></a><br /><br />
+                        <div id="container">
+                            <a href="re.html"
+                                style=" margin-right:0px; font-size:12.65px; font-family:Tahoma, Geneva, sans-serif; color: #eeba19"><strong>Reset
+                                    password?</strong></a>
+                            <a href="for.html"
+                                style=" margin-left:20px; font-size:12.65px; font-family:Tahoma, Geneva, sans-serif; color: #eeba19"><strong>Forget
+                                    password</strong></a>
+                        </div><br /><br /><br /><br /><br /><br />
+                        Don't have account?<a href="signup.html"
+                            style="font-family:'Play', sans-serif; text-decoration: underline; color: #eeba19">&nbsp;<strong>Sign
+                                Up</strong></a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="signup">
+                    <form>
+                        <h2 style="color: #eeba19;">Sign Up</h2>
+                        <input type="text" name="username" placeholder="First name"><br><br>
+                        <input type="text" name="username" placeholder="Last name"><br><br>
+                        <input type="password" name="pass" placeholder="Password"><br><br>
+                        <input type="password" name="pass" placeholder="Confirm Password"><br><br>
+                        <input type="text" placeholder="Email address"><br><br>
+                        <input type="button" value="Sign up" onclick="myFunction()"><br><br>
+                        <div id="msg">Congratulations You Signed Up successfully!!</div>
+                        <p>Already have account?</p><a href="logn.html"
+                            style="text-decoration: underline; font-family: 'Play', sans-serif; color: #eeba19;">&nbsp;<strong>Log
+                                In</strong></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--/modal-->

@@ -1,0 +1,10 @@
+$(window).scroll(function(){
+     if($(document).scrollTop()>600){
+         $('nav').addClass('bg-light');
+         $('nav').addClass('shadow');
+    }
+    else{
+         $('nav').removeClass('bg-light');
+         $('nav').removeClass('shadow');
+    }
+});
